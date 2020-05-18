@@ -1,4 +1,3 @@
-/// node_helper.js
 const spawn = require("child_process").spawn
 var NodeHelper = require("node_helper")
 
@@ -10,6 +9,7 @@ module.exports = NodeHelper.create({
         break
     }
   },
+  
   job: function() {
     var process = spawn("python3", ["/home/pi/MagicMirror/modules/PiTemp/temp.py"])
     process.stdout.on("data", (data)=>{
