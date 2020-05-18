@@ -43,7 +43,7 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 
 <tr>
 <td>otherColor</td>
-<td>"green"</td>
+<td>"yellow"</td>
 <td>This param is used to assign the color for the else condition: If cpu_temp is less than high AND cpu_temp is greater than low then otherColor</td>
 </tr>
 </table>
