@@ -4,7 +4,7 @@ var NodeHelper = require("node_helper")
 module.exports = NodeHelper.create({
   socketNotificationReceived: function(notification, payload) {
     switch(notification) {
-      case "GIVE_ME_DATA":
+      case "get_temp":
         this.job()
         break
     }
@@ -14,7 +14,7 @@ module.exports = NodeHelper.create({
     var process = spawn("python3", ["/home/pi/MagicMirror/modules/PiTemp/temp.py"])
     process.stdout.on("data", (data)=>{
       console.log(data)
-      this.sendSocketNotification("HERE_IS_DATA", data.toString())
+      this.sendSocketNotification("temperature", data.toString())
     })
   }
 })
