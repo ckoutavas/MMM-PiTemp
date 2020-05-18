@@ -1,4 +1,4 @@
-Module.register("PiTemp", {
+Module.register("MMM-PiTemp", {
 	defaults: {
     	freq: 60000,
     	high: 80,
