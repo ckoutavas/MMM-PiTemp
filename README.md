@@ -17,7 +17,7 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 <tr>
 <td>freq</td>
 <td>60000</td>
-<td>This is how frequently you want to run the temp.py file, which gets the temperature of the cpu</td>
+<td>This is how frequently you want to run the temp.py file (in ms), which gets the temperature of the cpu</td>
 </tr>
 
 <tr>
