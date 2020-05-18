@@ -47,7 +47,7 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 </tr>
 </table>
 
-Add `{module: "MMM-PiTemp", position: "top_right"},` to your config.js file.
+Add `{module: "MMM-PiTemp", position: "top_right", config: {}},` to your config.js file.
 
 If you want to change the temperature at which the pi shuts down then modify the if statement in the temp.py file
 ```
