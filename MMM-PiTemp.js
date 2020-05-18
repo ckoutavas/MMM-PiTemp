@@ -1,4 +1,13 @@
 Module.register("PiTemp", {
+	
+  defaults: {
+    freq: 60000,
+    high: 80,
+    low: 70,
+    highColor: "red",
+    lowColor: "green",
+    otherColor: "yellow"
+  },
 
   getDom: function() {
 
@@ -20,7 +29,7 @@ Module.register("PiTemp", {
 
           this.sendSocketNotification("GIVE_ME_DATA")
 
-        }, 60000)
+        }, this.config.freq)
 
         break
 
@@ -36,9 +45,9 @@ Module.register("PiTemp", {
       case "HERE_IS_DATA":
 
         var e = document.getElementById("DISPLAY")
-	if (parseFloat(payload) <= 70) {e.style.color = "green";}
-	else if (parseFloat(payload) >= 80) {e.style.color = "red"}
-	else {e.style.color = "yellow"}
+	if (parseFloat(payload) <= this.config.low) {e.style.color = this.config.lowColor;}
+	else if (parseFloat(payload) >= this.config.high) {e.style.color = this.config.HighColor}
+	else {e.style.color = this.config.otherColor}
 
         e.innerHTML = "CPU: " + payload.toString() + "°C";
         break;
