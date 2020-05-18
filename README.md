@@ -51,7 +51,7 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 Add `{module: "MMM-PiTemp", position: "top_right", config: {}},` to your `config.js` file. Feel free to modify the `config` param based on the chart above.
 
 # temp.py
-Make sure python3 is installed on your raspberry pi and that you have the following packages installed: `os` and ``
+Make sure python3 is installed on your raspberry pi and that you have the following packages installed: `os` and `gpiozero` you can install both packages using `pip3` in the terminal: `pip3 install os; pip3 install gpiozero`
 If you want to change the temperature at which the pi shuts down then modify the if statement in the temp.py file
 ```
 if cpu_temp < 85: # change to whatever temp you want
