@@ -1,6 +1,9 @@
 # MMM-PiTemp
 MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down.
 
+![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTemp2.png)
+
+
 ![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTemp.png)
 
 # Config.js
