@@ -2,14 +2,50 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 
 ![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTemp.png)
 
+# Config.js
+<table>
+<tr>
+<th>Param</th>
+<th>Default Value</th>
+<th>Definition</th>
+</tr>
 
+<tr>
+<td>freq</td>
+<td>60000</td>
+<td>This is how frequently you want to run the temp.py file, which gets the temperature of the cpu</td>
+</tr>
 
-You can change the color coding for the temperature ranges in the MMM-PiTemp.js file:
-```
-if (parseFloat(payload) <= 70) {e.style.color = "green";}
-	else if (parseFloat(payload) >= 80) {e.style.color = "red";}
-	else {e.style.color = "yellow";}
-```
+<tr>
+<td>high</td>
+<td>80</td>
+<td>This param is used to assign the color to a range: If cpu_temp is greater than high then lowColor</td>
+</tr>
+
+<tr>
+<td>low</td>
+<td>70</td>
+<td>This param is used to assign the color to a range: If cpu_temp is less than low then lowColor</td>
+</tr>
+
+<tr>
+<td>highColor</td>
+<td>"red"</td>
+<td>This param is used to assign the color for the high param: If cpu_temp is greater than high then highColor</td>
+</tr>
+
+<tr>
+<td>lowColor</td>
+<td>"green"</td>
+<td>This param is used to assign the color for the low param: If cpu_temp is greater than high then highColor</td>
+</tr>
+
+<tr>
+<td>otherColor</td>
+<td>"green"</td>
+<td>This param is used to assign the color for the else condition: If cpu_temp is less than high AND cpu_temp is greater than low then otherColor</td>
+</tr>
+</table>
 
 Add `{module: "MMM-PiTemp", position: "top_right"},` to your config.js file.
 
