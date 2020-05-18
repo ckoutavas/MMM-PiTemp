@@ -9,12 +9,12 @@ Module.register("MMM-PiTemp", {
 	},
 	
 	start: function() {
-   		this.sendSocketNotification("GIVE_ME_DATA");
+   		this.sendSocketNotification("get_temp");
   	},
 
   	getDom: function() {
    		 var e = document.createElement("div")
-   		 e.id = "DISPLAY"
+   		 e.id = "pi_temp"
 		return e
 	},
 
@@ -22,7 +22,7 @@ Module.register("MMM-PiTemp", {
 	 	switch(notification) {
       			case "DOM_OBJECTS_CREATED":
         		var timer = setInterval(()=>{
-				this.sendSocketNotification("GIVE_ME_DATA")
+				this.sendSocketNotification("get_temp")
         		}, this.config.freq)
         		break
     		}
@@ -30,8 +30,8 @@ Module.register("MMM-PiTemp", {
 
   	socketNotificationReceived: function(notification, payload) {
 		switch(notification) {
-      			case "HERE_IS_DATA":
-        		var e = document.getElementById("DISPLAY")
+      			case "temperature":
+        		var e = document.getElementById("pi_temp")
 			if (parseFloat(payload) <= this.config.low) {e.style.color = this.config.lowColor;}
 			else if (parseFloat(payload) >= this.config.high) {e.style.color = this.config.HighColor}
 			else {e.style.color = this.config.otherColor}
