@@ -38,7 +38,5 @@ Module.register("PiTemp", {
 			e.innerHTML = "CPU: " + payload.toString() + "°C";
        			 break;
 		}
-
   	},
-
 })
