@@ -1,5 +1,6 @@
 Module.register("MMM-PiTemp", {
 	defaults: {
+	tempUnit: "C"
     	freq: 60000,
     	high: 80,
     	low: 70,
@@ -35,7 +36,10 @@ Module.register("MMM-PiTemp", {
 			if (parseFloat(payload) <= this.config.low) {e.style.color = this.config.lowColor;}
 			else if (parseFloat(payload) >= this.config.high) {e.style.color = this.config.highColor}
 			else {e.style.color = this.config.otherColor}
-			e.innerHTML = "CPU: " + payload.toString() + "°C";
+
+			if (this.config.tempUnit === "C"){e.innerHTML = "CPU: " + payload.toString() + "°C";}
+			else {e.innerHTML = "CPU: " + (payload * (9/5) + 32).toFixed(1).toString() + "°F";}
+				
        			 break;
 		}
   	},
