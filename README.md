@@ -33,6 +33,13 @@ If everything runs as expected you can customize the config param based on the t
 </tr>
 
 <tr>
+<td>tempUnit</td>
+<td>"C"</td>
+<td>str</td>
+<td>This param is used to assign the unites for degrees. can be "C" for celsius or "F" for fahrenheit</td>
+</tr>
+
+<tr>
 <td>freq</td>
 <td>60000</td>
  <td>int</td>
