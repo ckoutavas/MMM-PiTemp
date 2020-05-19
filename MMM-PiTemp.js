@@ -1,6 +1,6 @@
 Module.register("MMM-PiTemp", {
 	defaults: {
-	tempUnit: "C"
+	tempUnit: "C",
     	freq: 60000,
     	high: 80,
     	low: 70,
