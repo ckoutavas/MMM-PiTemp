@@ -90,4 +90,4 @@ else:
 ```
 
 # todo
-Add `temp_unit` as a default param in `MMM-PiTemp.js`, which will allow users to change between degrees centigrade ("C") and fahrenheit ("F"). Default value will be centigrade.
+Add `tempUnit` as a default param in `MMM-PiTemp.js`, which will allow users to change between degrees centigrade ("C") and fahrenheit ("F"). Default value will be centigrade.
