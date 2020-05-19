@@ -23,7 +23,7 @@ The basic config should look like this
  ```
 If everything runs as expected you can customize the config param based on the table below.
     
-# Config.js
+# Config Settings
 <table>
 <tr>
 <th>Param</th>
