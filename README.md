@@ -12,7 +12,7 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 2. Clone this repo: ```$ git clone https://github.com/ckoutavas/MMM-PiTemp```
 3. List the contents of MagicMirror/modules to make sure that MMM-PiTemp was cloned: ```$ ls```
 4. Change the directory to MagicMirror/config: ```$ cd ~/MagicMirror/config```
-5. Modify your config.js file to add the MMM-PiTemp module: ```$ sudo nano config.js```
+5. Modify your config.js file and add the MMM-PiTemp module: ```$ sudo nano config.js```
 
 The basic config should look like this
 
