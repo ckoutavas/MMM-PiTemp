@@ -13,7 +13,8 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 3. List the contents of MagicMirror/modules to make sure that MMM-PiTemp was cloned: ```$ ls```
 4. Change the directory to MagicMirror/config: ```$ cd ~/MagicMirror/config```
 5. Modify your config.js file and add the MMM-PiTemp module: ```$ sudo nano config.js```
-
+    
+# Config Settings
 The basic config should look like this
 
 ```
@@ -22,8 +23,7 @@ The basic config should look like this
  config: {}},
  ```
 If everything runs as expected you can customize the config param based on the table below.
-    
-# Config Settings
+
 <table>
 <tr>
 <th>Param</th>
@@ -74,8 +74,6 @@ If everything runs as expected you can customize the config param based on the t
 <td>This param is used to assign the color for the else condition: If cpu_temp is less than high AND cpu_temp is greater than low then otherColor</td>
 </tr>
 </table>
-
-Add `{module: "MMM-PiTemp", position: "top_right", config: {}},` to your `config.js` file. Feel free to modify the `config` param based on the chart above.
 
 # temp.py
 Make sure python3 is installed on your raspberry pi and that you have the following packages installed: `os` and `gpiozero` you can install both packages using `pip3` in the terminal: `pip3 install os; pip3 install gpiozero`
