@@ -58,7 +58,7 @@ If everything runs as expected you can customize the config param based on the t
 <tr>
 <td>lowColor</td>
 <td>"green"</td>
-<td>This param is used to assign the color for the low param: If cpu_temp is greater than high then highColor</td>
+<td>This param is used to assign the color for the low param: If cpu_temp is less than low then lowColor</td>
 </tr>
 
 <tr>
