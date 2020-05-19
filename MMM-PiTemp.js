@@ -39,8 +39,7 @@ Module.register("MMM-PiTemp", {
 
 			if (this.config.tempUnit === "C"){e.innerHTML = "CPU: " + payload.toString() + "°C";}
 			else {e.innerHTML = "CPU: " + (payload * (9/5) + 32).toFixed(1).toString() + "°F";}
-				
-       			 break;
+       			break;
 		}
   	},
 })
