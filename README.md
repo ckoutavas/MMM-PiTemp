@@ -5,6 +5,8 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 
 ![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTemp.png)
 
+![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTemp3.png)
+
 # Install
 1. Change the the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
 2. Clone this repo: ```$ git clone https://github.com/ckoutavas/MMM-PiTemp```
