@@ -38,7 +38,7 @@ If everything runs as expected you can customize the config param based on the t
 <tr>
 <td>high</td>
 <td>80</td>
-<td>This param is used to assign the color to a range: If cpu_temp is greater than high then lowColor</td>
+<td>This param is used to assign the color to a range: If cpu_temp is greater than high then highColor</td>
 </tr>
 
 <tr>
