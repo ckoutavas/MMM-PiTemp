@@ -93,4 +93,3 @@ if cpu_temp < 85: # change to whatever temp you want
 else:
     os.system("sudo shutdown -r now")
 ```
-
