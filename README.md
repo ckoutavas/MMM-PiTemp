@@ -36,7 +36,7 @@ If everything runs as expected you can customize the config param based on the t
 <td>tempUnit</td>
 <td>"C"</td>
 <td>str</td>
-<td>This param is used to assign the unites for degrees. can be "C" for celsius or "F" for fahrenheit</td>
+<td>This param is used to assign the units for degrees. can be "C" for celsius or "F" for fahrenheit</td>
 </tr>
 
 <tr>
