@@ -28,42 +28,49 @@ If everything runs as expected you can customize the config param based on the t
 <tr>
 <th>Param</th>
 <th>Default Value</th>
+<th>Type</th>
 <th>Definition</th>
 </tr>
 
 <tr>
 <td>freq</td>
 <td>60000</td>
+ <td>int</td>
 <td>This is how frequently you want to run the temp.py file (in ms), which gets the temperature of the cpu</td>
 </tr>
 
 <tr>
 <td>high</td>
 <td>80</td>
+<td>int</td>
 <td>This param is used to assign the color to a range: If cpu_temp is greater than high then highColor</td>
 </tr>
 
 <tr>
 <td>low</td>
 <td>70</td>
+<td>int</td>
 <td>This param is used to assign the color to a range: If cpu_temp is less than low then lowColor</td>
 </tr>
 
 <tr>
 <td>highColor</td>
 <td>"red"</td>
+<td>str</td>
 <td>This param is used to assign the color for the high param: If cpu_temp is greater than high then highColor</td>
 </tr>
 
 <tr>
 <td>lowColor</td>
 <td>"green"</td>
+<td>str</td>
 <td>This param is used to assign the color for the low param: If cpu_temp is less than low then lowColor</td>
 </tr>
 
 <tr>
 <td>otherColor</td>
 <td>"yellow"</td>
+<td>str</td>
 <td>This param is used to assign the color for the else condition: If cpu_temp is less than high AND cpu_temp is greater than low then otherColor</td>
 </tr>
 </table>
