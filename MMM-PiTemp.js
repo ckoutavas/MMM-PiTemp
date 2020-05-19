@@ -33,7 +33,7 @@ Module.register("MMM-PiTemp", {
       			case "temperature":
         		var e = document.getElementById("pi_temp")
 			if (parseFloat(payload) <= this.config.low) {e.style.color = this.config.lowColor;}
-			else if (parseFloat(payload) >= this.config.high) {e.style.color = this.config.HighColor}
+			else if (parseFloat(payload) >= this.config.high) {e.style.color = this.config.highColor}
 			else {e.style.color = this.config.otherColor}
 			e.innerHTML = "CPU: " + payload.toString() + "°C";
        			 break;
