@@ -18,9 +18,11 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 The basic config should look like this
 
 ```
-{module: "MMM-PiTemp",
- position: "top_right",
- config: {}},
+{
+    module: "MMM-PiTemp",
+    position: "top_right",
+    config: {}
+},
  ```
 If everything runs as expected you can customize the config param based on the table below.
 
