@@ -82,6 +82,13 @@ If everything runs as expected you can customize the config param based on the t
 <td>str</td>
 <td>This param is used to assign the color for the else condition: If cpu_temp is less than high AND cpu_temp is greater than low then otherColor</td>
 </tr>
+
+<tr>
+<td>label</td>
+<td>"CPU: "</td>
+<td>str</td>
+<td>This param is used to assign the label to the temperature.</td>
+</tr>
 </table>
 
 # temp.py
