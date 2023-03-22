@@ -1,12 +1,12 @@
 Module.register("MMM-PiTemp", {
 	defaults: {
 		tempUnit: "C",
-    	freq: 60000,
-    	high: 80,
-    	low: 70,
-    	highColor: "red",
-    	lowColor: "green",
-    	otherColor: "yellow",
+    		freq: 60000,
+    		high: 80,
+    		low: 70,
+    		highColor: "red",
+    		lowColor: "green",
+    		otherColor: "yellow",
 		label: "CPU:"
 	},
 	
@@ -15,8 +15,8 @@ Module.register("MMM-PiTemp", {
   	},
 
   	getDom: function() {
-   		 var e = document.createElement("div")
-   		 e.id = "pi_temp"
+		var e = document.createElement("div")
+   		e.id = "pi_temp"
 		return e
 	},
 
