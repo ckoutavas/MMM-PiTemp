@@ -24,12 +24,6 @@ The basic config should look like this
     config: {}
 },
  ```
- If you do not see the temp displayed, make sure the file path to `temp.py` is correct in `node_helper.js`
- 
- ```
- var process = spawn("python3", ["/home/pi/MagicMirror/modules/MMM-PiTemp/temp.py"])
- ```
- 
 If everything runs as expected you can customize the config param based on the table below.
 
 <table>
