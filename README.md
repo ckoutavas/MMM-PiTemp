@@ -91,6 +91,14 @@ If everything runs as expected you can customize the config param based on the t
 </tr>
 </table>
 
+# custom.css
+You can updated your `~/MagicMirror/css/custom.css` file to add custom styling by using the `#pi_temp` id
+```
+#pi_temp {
+  font-size: 40px;
+}
+```
+
 # temp.py
 Make sure python3 is installed on your raspberry pi and that you have the following packages installed: `os` and `gpiozero`. You can install the packages using `pip3` in the terminal: `pip3 install gpiozero`. `os` should be installed by defalut.
 If you want to change the temperature at which the pi shuts down then modify the if statement in the temp.py file
