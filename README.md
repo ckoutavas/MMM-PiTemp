@@ -85,7 +85,7 @@ If everything runs as expected you can customize the config param based on the t
 
 <tr>
 <td>label</td>
-<td>"<i class='fab fa-raspberry-pi'></i>"</td>
+<td>&lt;i class='fab fa-raspberry-pi'></i&gt;</td>
 <td>str</td>
 <td>This param is used to assign the label to the temperature.</td>
 </tr>
