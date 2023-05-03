@@ -7,7 +7,7 @@ Module.register("MMM-PiTemp", {
     		highColor: "red",
     		lowColor: "green",
     		otherColor: "yellow",
-		label: "CPU:"
+		label: "<i class='fab fa-raspberry-pi'></i>"
 	},
 	
 	start: function() {
